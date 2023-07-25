@@ -3,12 +3,13 @@
 
 using namespace std;
 
-void correct()
+// Ensuring correct / incorrect functions are tieed to Check class
+void Check::correct()
 {
     cout << "Correct Guess!" << endl;
 };
 
-void incorrect()
+void Check::incorrect()
 {
     cout << "Incorrect Guess... Try again!" << endl;
 }

@@ -7,5 +7,30 @@ using namespace std;
 
 int main()
 {
-    cout << "Connected" << endl;
+
+    Check check;
+
+    bool playing = 1;
+
+    cout << "Guess the password" << endl;
+
+    do
+    {
+        string guess;
+        cout << "Enter guess > " << flush;
+        cin >> guess;
+
+        // Obviosuly would never do something like this in realworld
+        // JUST FOR PRACTICE
+        if (guess == "Password")
+        {
+            check.correct();
+            playing = 0;
+        }
+        else
+        {
+            check.incorrect();
+        }
+
+    } while (playing == 1);
 }
